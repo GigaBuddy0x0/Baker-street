@@ -1,0 +1,5 @@
+#ifndef ANNUALREPORT
+#define ANNUALREPORT
+
+#endif // ANNUALREPORT
+
