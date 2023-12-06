@@ -1,5 +1,7 @@
 #ifndef EXPENSEINPUTSCREEN
 #define EXPENSEINPUTSCREEN
 
+#include "ExpenseList.h"
+
 #endif // EXPENSEINPUTSCREEN
 

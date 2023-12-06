@@ -1,8 +1,13 @@
 #ifndef USERINTERFACE
 #define USERINTERFACE
+
 //////////////////Класс UserInterface//////////////////////
 //Главный класс для запуска приложения:
 //этот класс определяет взаимодействие юзера с программой.
+#include "ProduceInputScreen.h"
+#include "ProfitInputScreen.h"
+#include "ExpenseInputScreen.h"
+
 class UserInterface
 {
 private:
