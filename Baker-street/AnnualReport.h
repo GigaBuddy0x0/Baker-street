@@ -11,7 +11,7 @@ class AnnualReport
 private:
 ProfitList* ptrPL; // записи доходов
 ExpenseList* ptrEL; // записи расходов
-float expenses, profit; // суммы доходов и расходов
+float expenses, profits; // суммы доходов и расходов
 public:
 AnnualReport(ProfitList*, ExpenseList*);
 void display(); // отображение годового отчета
