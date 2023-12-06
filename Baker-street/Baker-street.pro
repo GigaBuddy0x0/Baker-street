@@ -20,5 +20,6 @@ HEADERS += \
     ExpenseList.h \
     Profit.h \
     ProfitInputScreen.h \
-    ProfitList.h
-
+    ProfitList.h \
+    GlobalMetods.h \
+    libs.h
