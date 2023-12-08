@@ -3,7 +3,7 @@
 
 #include "Expense.h"
 
-//Класс записей о затратах
+//Класс записей о расходах
 class ExpenseList
 {
 private:
@@ -11,9 +11,9 @@ private:
     vector<Expense*>::iterator iter;
 public:
     ~ExpenseList();
-    void insertExp(Expense*);
-    void display();
-    float displaySummary(); // нужно для годового отчета
+    void InsertExpense(Expense*);
+    float DisplaySummExpenses();
+    void DisplayExp();
 };
 
 #endif // EXPENSELIST

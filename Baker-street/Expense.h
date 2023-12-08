@@ -6,16 +6,20 @@
 //Класс затрат
 class Expense
 {
-public:
-    int month, day; // месяц и день уплаты расходов
+private:
     string category; // категория расходов (газ, свет, ремонт и тд)
-    string payee; // кому платим (поставщики газа, света, сервисный центр...)
+    string expense_item; //название расхода
+    string month; // месяц уплаты расходов
     float amount; // сколько платим
-    Expense()
-    { }
-    Expense(int m, int d, string c, string p, float a) :
-        month(m), day(d), category(c), payee(p), amount(a)
-    { }
+public:
+    Expense(string c, string e, string m, float a):
+        category(c), expense_item(e), month(m),amount(a)
+    {}
+    ~Expense();
+    string GetCategory();
+    string GetExpense_item();
+    string GetMonth();
+    float GetAmount();
 };
 
 #endif // EXPENSE
