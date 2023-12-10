@@ -11,7 +11,7 @@ private:
     double ProfitGlobalcost;
     string ProfitDate;
 public:
-    ProfitInputScreen(ProfitLis* ptrPrfL) : ptrProfitLis(ptrPrfL)
+    ProfitInputScreen(ProfitList* ptrPrfL) : ptrProfitList(ptrPrfL)
         {
         /* тут пусто */
         }
