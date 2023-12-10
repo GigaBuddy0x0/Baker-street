@@ -4,18 +4,18 @@
 #include "ProfitList.h"
 class ProfitInputScreen
 {
-private;
+private:
     ProfitList* ptrProfitList;
     string ProfitName;
-    int Profitquantity;
-    double Profitglobalcost;
-    string Profitdate;
+    int ProfitQuantity;
+    double ProfitGlobalcost;
+    string ProfitDate;
 public:
-        ProfitInputScreen(ProfitLis* ptrPrfL) : ptrProfitLis(ptrPrfL)
+    ProfitInputScreen(ProfitLis* ptrPrfL) : ptrProfitLis(ptrPrfL)
         {
         /* тут пусто */
         }
-        void setProfit(); // добавить данные о жильце
+    void setProfit(); // добавить данные о доходе
 };
 
 #endif // PROFITINPUTSCREEN

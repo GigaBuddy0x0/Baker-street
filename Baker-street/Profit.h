@@ -4,13 +4,13 @@
 #include "libs.h"
 class Profit
 {
-private;
+private:
     string name;
     int quantity;
     double globalcost;
     string date;
 public:
-        Profit(string, int, double);
+        Profit(string, int, double,string);
         ~Profit();
         string GetName();
         int GetQuantity();
