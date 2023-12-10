@@ -14,6 +14,11 @@ public:
     void InsertExpense(Expense*);
     float DisplaySummExpenses();
     void DisplayExp();
+    //геттеры:
+    string GetCategoryExpense(string);
+    //string GetNameExpense(string);
+    string GetDateExpense(string);
+    float GetAmountExpense(string);
 };
 
 #endif // EXPENSELIST
