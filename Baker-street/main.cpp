@@ -1,10 +1,12 @@
-#include <iostream>
-
-using namespace std;
+#include "UserInterface.h"
 
 int main()
 {
-    cout << "Here is a start of our project!" << endl;
+
+    setlocale(LC_ALL, "rus");
+    UserInterface theUserInterface;
+    theUserInterface.interact();
+
     return 0;
 }
 
