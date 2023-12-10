@@ -5,16 +5,17 @@
 
 class ProfitList {
 private:
-    // установить указатели на продукцию
-    list <Profit*> setPtrsProfits; // указатели на класс продукция
+    // установить указатели на доход
+    list <Profit*> setPtrsProfits; // указатели на класс дохода
     list <Profit*>::iterator iter; //итератор
 public:
-    ~ProfitList(); // деструктор (удаление продукции из списка)
-    void insertProfit(Profit*); // добавить продукцию в список
+    ~ProfitList(); // деструктор (удаление дохода из списка)
+    void insertProfit(Profit*); // добавить доход в список
     int GetQuantityProfit(string);
     double GetGlobalcostProfit(string);
     string GetDateProfit(string);
-    void display(); // вывод списка продукции
+    void DisplaySummProfits(); // вывод списка доходов
+    void DisplayProf();
 };
 #endif // PROFITLIST
 
