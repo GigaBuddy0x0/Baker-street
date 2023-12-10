@@ -18,23 +18,23 @@ void UserInterface::interact()
 {
     while (true)
     {
-        cout << "To enter data press 'i', \n"
+        cout << "To enter data press 'e', \n"
              << " to display the report 'd', \n"
              << " to exit 'q': \n";
         char ch;
         cin >> ch;
-        if (ch == 'i') // input data
+        if (ch == 'e') // enter data
         {
-            cout << " press 't' to add products, \n"
-                 << " press 'r' to record income, \n"
+            cout << " press 'p' to add products, \n"
+                 << " press 'i' to record income, \n"
                  << " press 'e' to record expenses: \n";
             cin >> ch;
             switch (ch)
             {
                 // input screens only exist during their use
-            case 't': cout << "Function is under development. Please come back later!" << endl;
+            case 'p': cout << "Function is under development. Please come back later!" << endl;
                 break;
-            case 'r': cout << "Function is under development. Please come back later!" << endl;
+            case 'i': cout << "Function is under development. Please come back later!" << endl;
                 break;
             case 'e': cout << "Function is under development. Please come back later!" << endl;
                 break;
@@ -45,16 +45,16 @@ void UserInterface::interact()
 
         else if (ch == 'd') // output data
         {
-            cout << "Press 't' to display the list of products, \n"
-                 << " press 'r' to display income, \n"
+            cout << "Press 'l' to display the list of products, \n"
+                 << " press 'i' to display income, \n"
                  << " press 'e' to display expenses, \n"
                  << " press 'a' to display the annual report: \n";
             cin >> ch;
             switch (ch)
             {
-            case 't': cout << "Function is under development. Please come back later!" << endl;
+            case 'l': cout << "Function is under development. Please come back later!" << endl;
                 break;
-            case 'r': cout << "Function is under development. Please come back later!" << endl;
+            case 'i': cout << "Function is under development. Please come back later!" << endl;
                 break;
             case 'e': cout << "Function is under development. Please come back later!" << endl;
                 break;
@@ -68,6 +68,6 @@ void UserInterface::interact()
             return; // exit
         }
         else
-            cout << "Unknown function. Press only 'i', 'd', or 'q'\n";
+            cout << "Unknown function. Press only 'e', 'd', or 'q'\n";
     } // end while
 }

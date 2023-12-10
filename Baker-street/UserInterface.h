@@ -19,7 +19,6 @@ private:
     ExpenseList* ptrExpenseList;
     ExpenseInputScreen* ptrExpenseInputScreen;
     AnnualReport* ptrAnnualReport;
-    char ch;
 public:
     UserInterface();
     ~UserInterface();
