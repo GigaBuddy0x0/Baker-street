@@ -4,7 +4,7 @@
 #include "libs.h"
 class Profit
 {
-private;
+private:
     string name;
     int quantity;
     double globalcost;
