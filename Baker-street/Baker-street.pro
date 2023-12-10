@@ -4,7 +4,13 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    UserInterface.cpp
+    UserInterface.cpp \
+    ProduceList.cpp \
+    ExpenseList.cpp \
+    ProfitList.cpp \
+    Produce.cpp \
+    Expense.cpp \
+    Profit.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -21,5 +27,4 @@ HEADERS += \
     Profit.h \
     ProfitInputScreen.h \
     ProfitList.h \
-    GlobalMetods.h \
     libs.h
