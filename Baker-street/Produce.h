@@ -1,10 +1,9 @@
 #ifndef PRODUCE
 #define PRODUCE
 
-#include <iostream>
-using namespace std;
+#include "libs.h"
 
-Class Produce
+class Produce
 {
 private:
     string name;
