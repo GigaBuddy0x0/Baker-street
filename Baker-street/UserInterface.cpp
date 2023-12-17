@@ -16,27 +16,36 @@ UserInterface::~UserInterface()
 
 void UserInterface::interact()
 {
+    char ch;
     while (true)
     {
         cout << "To enter data press 'e', \n"
              << " to display the report 'd', \n"
              << " to exit 'q': \n";
-        char ch;
-        cin >> ch;
+        ch = getaChar();
         if (ch == 'e') // enter data
         {
             cout << " press 'p' to add products, \n"
                  << " press 'i' to record income, \n"
                  << " press 'e' to record expenses: \n";
-            cin >> ch;
+            ch = getaChar();
             switch (ch)
             {
                 // input screens only exist during their use
-            case 'p': cout << "Function is under development. Please come back later!" << endl;
+            case 'p':
+                ptrProduceInputScreen = new ProduceInputScreen(ptrProduceList);
+                ptrProduceInputScreen->setProduce();
+                delete ptrProduceInputScreen;
                 break;
-            case 'i': cout << "Function is under development. Please come back later!" << endl;
+            case 'i':
+                ptrProfitInputScreen = new ProfitInputScreen(ptrProfitList);
+                ptrProfitInputScreen->setProfit();
+                delete ptrProfitInputScreen;
                 break;
-            case 'e': cout << "Function is under development. Please come back later!" << endl;
+            case 'e':
+                ptrExpenseInputScreen = new ExpenseInputScreen(ptrExpenseList);
+                ptrExpenseInputScreen->SetExpense();
+                delete ptrExpenseInputScreen;
                 break;
             default: cout << "Unknown function\n";
                 break;
@@ -49,22 +58,24 @@ void UserInterface::interact()
                  << " press 'i' to display income, \n"
                  << " press 'e' to display expenses, \n"
                  << " press 'a' to display the annual report: \n";
-            cin >> ch;
+            ch = getaChar();
             switch (ch)
             {
-            case 'l': cout << "Function is under development. Please come back later!" << endl;
+            case 'l': ptrProduceList->DisplayProd();
                 break;
-            case 'i': cout << "Function is under development. Please come back later!" << endl;
+            case 'i': ptrProfitList->DisplayProf();
                 break;
-            case 'e': cout << "Function is under development. Please come back later!" << endl;
+            case 'e': ptrExpenseList->DisplayExp();
                 break;
-            case 'a': cout << "Function is under development. Please come back later!" << endl;
+            case 'a':
+                ptrAnnualReport = new AnnualReport(ptrProfitList, ptrExpenseList);
+                ptrAnnualReport->display();
+                delete ptrAnnualReport;
             default: cout << "Unknown display function\n";
                 break;
             } // end switch
         } // end elseif
         else if (ch == 'q') {
-            system("pause");
             return; // exit
         }
         else

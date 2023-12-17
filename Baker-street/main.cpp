@@ -7,6 +7,7 @@ int main()
     UserInterface theUserInterface;
     theUserInterface.interact();
 
+    system("pause");
     return 0;
 }
 
