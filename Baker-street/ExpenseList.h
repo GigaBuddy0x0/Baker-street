@@ -15,10 +15,9 @@ public:
     float DisplaySummExpenses(); //вывести сумму всех расходов
     void DisplayExp(); //вывести строку расходов
     //геттеры:
-    string GetCategoryExpense(string);
-    //string GetNameExpense(string);
-    string GetDateExpense(string);
-    float GetAmountExpense(string);
+    //string GetCategoryExpense(string);
+    //string GetDateExpense(string);
+    //float GetAmountExpense(string);
 };
 
 #endif // EXPENSELIST
