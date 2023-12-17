@@ -14,7 +14,8 @@ SOURCES += main.cpp \
     AnnualReport.cpp \
     ExpenseInputScreen.cpp \
     ProduceInputScreen.cpp \
-    ProfitInputScreen.cpp
+    ProfitInputScreen.cpp \
+    globalmetods.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -31,4 +32,5 @@ HEADERS += \
     Profit.h \
     ProfitInputScreen.h \
     ProfitList.h \
-    libs.h
+    libs.h \
+    globalmetods.h

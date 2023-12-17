@@ -10,3 +10,4 @@ ProfitList::~ProfitList() // деструктор
         setPtrsProfits.erase(iter);
     }
 }
+
