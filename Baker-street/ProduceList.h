@@ -10,10 +10,11 @@ private:
     list <Produce*>::iterator iter; //итератор
 public:
     ~ProduceList(); // деструктор (удаление продукции из списка)
-    void insertProduce(Produce*); // добавить продукцию в список
-    int getIdPr(string); // возвращают id и стоимость записи по имени позиции
-    double getCostPr(string);
-    void display(); // вывод списка продукции
+    void InsertProduce(Produce*); // добавить продукцию в список
+    void RemoveProduce(Produce*); // добавить продукцию в список
+    int GetIdProduce(string); // возвращают id и стоимость записи по имени позиции
+    double GetCostProduce(string);
+    void DisplayProd(); // вывод списка продукции
 };
 
 #endif // PRODUCELIST

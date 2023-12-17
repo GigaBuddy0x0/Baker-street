@@ -7,15 +7,13 @@ class ProduceInputScreen
 {
 private:
     ProduceList* ptrProduceList;
-    string PrName;
-    int PrId;
-    double PrCost;
+    string ProduceName;
+    int ProduceId;
+    double ProduceCost;
 public:
     ProduceInputScreen(ProduceList* ptrPL) : ptrProduceList(ptrPL)
-    {
-    /* тут пусто */
-    }
-    void setProduce(); // добавить данные о жильце
+    { }
+    void setProduce(); // добавить данные о продукции
 };
 
 #endif // PRODUCEINPUTSCREEN
