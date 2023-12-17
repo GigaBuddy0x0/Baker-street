@@ -10,7 +10,7 @@ private:
     double globalcost;
     string date;
 public:
-        Profit(string, int, double,string);
+        Profit(string, int, double, string);
         ~Profit();
         string GetName();
         int GetQuantity();
