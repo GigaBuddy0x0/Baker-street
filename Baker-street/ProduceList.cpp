@@ -37,8 +37,8 @@ double ProduceList::GetCostProduce(string name) // получить стоимо
 void ProduceList::DisplayProd() // вывод списка товаров
 {
     cout << endl;
-    cout << setw(15) << "Id" << setw(15) << "Name" << setw(15) << "Cost";
-    cout << endl << "--------------------------------------------------------------" << endl;
+    cout << left << setw(15) << "Id" << setw(15) << "Name" << setw(15) << "Cost";
+    cout << endl << "--------------------------------------" << endl;
     if (setPtrsProds.empty()) // если список товаров пуст
     cout << "***There's nothing here***\n" << endl; // выводим запись, что он пуст)
     else
@@ -46,7 +46,7 @@ void ProduceList::DisplayProd() // вывод списка товаров
         iter = setPtrsProds.begin();
         while (iter != setPtrsProds.end()) // распечатываем все товары
         {
-        cout << setw(15) << (*iter)->GetId()
+        cout << left << setw(15) << (*iter)->GetId()
           << setw(15) << (*iter)->GetName()
           << setw(15) << (*iter)->GetCost() << endl;
         *iter++;
