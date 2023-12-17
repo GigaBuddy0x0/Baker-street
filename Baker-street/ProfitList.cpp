@@ -19,9 +19,9 @@ void ProfitList::InsertProfit(Profit* ptrProf)
 void ProfitList::DisplayProf() // отобразить все строки с доходами
 {
     cout << endl;
-    cout << setw(15) << "Name" << setw(15) << "Quantity"
+    cout << left << setw(15) << "Name" << setw(15) << "Quantity"
          << setw(15) << "Globalcost" << setw(15) << "Date";
-    cout << endl << "----------------------------------------------------------------------" << endl;
+    cout << endl << "-----------------------------------------------------" << endl;
     if (setPtrsProfits.empty()) // если список доходов пуст
     cout << "***There's nothing here***\n" << endl; // выводим запись, что он пуст)
     else
@@ -29,7 +29,7 @@ void ProfitList::DisplayProf() // отобразить все строки с д
         iter = setPtrsProfits.begin();
         while (iter != setPtrsProfits.end()) // распечатываем все доходы
         {
-        cout << setw(15) << (*iter)->GetName()
+        cout << left << setw(15) << (*iter)->GetName()
           << setw(15) << (*iter)->GetQuantity()
           << setw(15) << (*iter)->GetGlobalcost()
           << setw(15) << (*iter)->GetDate() << endl;
