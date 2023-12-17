@@ -1,6 +1,6 @@
 #include "ExpenseInputScreen.h"
 
-void ExpenseInputScreen::SetExpense() // добавить данные о жильце
+void ExpenseInputScreen::SetExpense() // добавить данные о расходе
 {
     cout << "Input the category of expense: " << endl;
     getaLine(ExpenseCategory);
