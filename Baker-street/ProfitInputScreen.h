@@ -8,10 +8,10 @@ private:
     ProfitList* ptrProfitList;
     string ProfitName;
     int ProfitQuantity;
-    double ProfitGlobalcost;
+    double ProfitGlobalCost;
     string ProfitDate;
 public:
-    ProfitInputScreen(ProfitLis* ptrPrfL) : ptrProfitLis(ptrPrfL)
+    ProfitInputScreen(ProfitList* ptrPrfL) : ptrProfitList(ptrPrfL)
         {
         /* тут пусто */
         }
