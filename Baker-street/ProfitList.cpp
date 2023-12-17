@@ -38,12 +38,12 @@ void ProfitList::DisplayProf() // отобразить все строки с д
     }
 }
 
-float ProfitList::DisplaySummProfits() // сумма всех платежей
+float ProfitList::DisplaySummProfits() // сумма всех доходов
 {
     float sumProfits = 0.0;
     iter = setPtrsProfits.begin();
     while (iter != setPtrsProfits.end())
-    { // плюсуем суммы всех платежей жильцов за все время
+    { // плюсуем суммы всех доходов за все время
         sumProfits += (*iter)->GetGlobalcost();
         iter++;
     }
