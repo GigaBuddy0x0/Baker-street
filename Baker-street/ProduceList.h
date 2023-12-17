@@ -12,8 +12,7 @@ public:
     ~ProduceList(); // деструктор (удаление продукции из списка)
     void InsertProduce(Produce*); // добавить продукцию в список
     void RemoveProduce(Produce*); // добавить продукцию в список
-    int GetIdProduce(string); // возвращают id и стоимость записи по имени позиции
-    double GetCostProduce(string);
+    double GetCostProduce(string); // возвращают id и стоимость записи по имени позиции
     void DisplayProd(); // вывод списка продукции
 };
 

@@ -14,7 +14,7 @@ private:
 public:
     Expense(string c, string n, string d, float a):
         category(c), name(n), date(d), amount(a)
-    {}
+    { }
     ~Expense();
     //геттеры:
     string GetCategory();
