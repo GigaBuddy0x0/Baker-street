@@ -13,8 +13,8 @@ private:
     string ExpenseDate; // дата уплаты расходов
     float ExpenseAmount; // сколько платим
 public:
-    ExpenseInputScreen(ExpenseList*);
-    ~ExpenseInputScreen();
+    ExpenseInputScreen(ExpenseList* ptrExp): ptrExpenseList(ptrExp)
+    { }
     void SetExpense(); //внести расход
 };
 
