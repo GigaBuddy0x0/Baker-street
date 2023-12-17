@@ -10,7 +10,11 @@ SOURCES += main.cpp \
     ProfitList.cpp \
     Produce.cpp \
     Expense.cpp \
-    Profit.cpp
+    Profit.cpp \
+    AnnualReport.cpp \
+    ExpenseInputScreen.cpp \
+    ProduceInputScreen.cpp \
+    ProfitInputScreen.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
